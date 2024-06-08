@@ -1,20 +1,151 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens : {
+      a1:"1202px",
+      a2:"1080px",
+      a3:"1024px",
+      a4:"478px",
+      a5:"492px",
+      a6:"750px",
+      a7:"430px",
+      a8:"354px",
+      a9:"920px",
+      a10:"606px",
+      a11:"430px",
+      a12:"405px",
+      a13:"386px",
+      a14:"330px",
+      a15:"370px",
+      a16:"320px",
+      a17:"300px",
+      head1: "1382px",
+      head2: "1314px",
+      head3: "1260px",
+      head4: "1214px",
+      Whysell1:"986px",
+      Whysell2:"950px",
+      Whysell3:"785px",
+      Whysell4:"680px",
+      Whysell5:"655px",
+      Whysell6:"615px",
+      Whysell7:"556px",
+      Whysell8:"460px",
+      Whysell9:"889px",
+      Whysell10:"729px",
+      Whysell11:"710px",
+      Whysell12:"526px",
+      Whysell13:"396px",
+      Whysell14:"320px",
+      Review1:"975px",
+      Review2:"990px",
+      Reviews3:"906px",
+      Reviews4:"790px",
+      Reviews5:"715px",
+      Reviews6:"650px",
+      Reviews7:"588px",
+      Reviews8:"543px",
+      Reviews9:"715px",
+      Reviwes10:"610px",
+      Reviwes11:"615px",
+      Reviews12:"549px",
+      Reviews13:"463px",
+      Reviews14:"467px",
+      Reviews15:"331px",
+      Reviews16:"340px",
+      Reviews17:"318px",
+      Reviews18:"298px",
+      Reviews19:"370px",
+      OurValues1:"1189px",
+      OurValues2:"1007px",
+      OurValues3:"645px",
+      OurValues4:"617px",
+      OurValues5:"517px",
+      OurValues6:"482px",
+      OurValues7:"400px",
+      OurTeam1:"1050px",
+      OurTeam2:"515px",
+      OurTeam3:"457px",
+      OurTeam4:"353px",
+      OurTeam5:'365px',
+      OurTeam6:"271px"
+
+      
+      },
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
