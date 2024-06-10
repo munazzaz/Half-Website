@@ -17,8 +17,8 @@ const Header = () => {
 
 
  <ul className='flex gap-x-5 head2:gap-x-7 items-center'>
- <li><Link href="/HowItWorks" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>How It Works</Link></li>
- <li><Link href="/Testimonials" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>Testimonials</Link></li>
+ <li><Link href="/how-it-works" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>How It Works</Link></li>
+ <li><Link href="/reviews" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>Testimonials</Link></li>
  <li><Link href="/" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>FAQs</Link></li>
  <li><Link href="/about-us" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>About Us</Link></li>
  <li> <Link href="/i-need-to-sell-my-house" className='hover:duration-300 text-[#636363] hover:text-[#cecdcd] text-[20px] font-semibold'>Why Sell?</Link></li>

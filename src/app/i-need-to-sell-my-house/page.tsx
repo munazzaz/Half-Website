@@ -1,3 +1,12 @@
+import { Metadata } from 'next'
+
+export const metadata:Metadata = {
+  title:{
+    absolute:"Top Reasons To Sell Your Home in CA | CLM Homes",
+  }
+}
+
+
 import React from 'react'
 import WhySellHerosection from '../components/WhySellHerosection'
 import ResponsiveWhyselltop from '../components/ResponsiveWhyselltop'

@@ -85,7 +85,9 @@ const config = {
       OurTeam3:"457px",
       OurTeam4:"353px",
       OurTeam5:'365px',
-      OurTeam6:"271px"
+      OurTeam6:"271px",
+      notfound:"520px",
+      notfound1:"416px"
 
       
       },
