@@ -87,7 +87,11 @@ const config = {
       OurTeam5:'365px',
       OurTeam6:"271px",
       notfound:"520px",
-      notfound1:"416px"
+      notfound1:"416px",
+      popplivechat:"501px",
+      popplivechat1:"440px",
+      popplivechat2:"405px",
+      popplivechat3:"325px"
 
       
       },

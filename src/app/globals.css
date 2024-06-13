@@ -290,3 +290,100 @@
 .animate-slide-up.hidden {
   transform: translateY(100%);
 }
+
+
+
+
+/* styles/globals.css */
+/* @keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  animation: ripple 1s linear;
+  transform: scale(0);
+  pointer-events: none;
+} */
+
+
+
+
+
+/* Ripple Effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+    left: 0;
+    width: 100%; /* Start from left */
+  }
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8); /* Increased visibility */
+  animation: ripple 1s linear;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+
+
+
+
+
+
+/* global.css */
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scale-in 0.3s ease-out;
+}

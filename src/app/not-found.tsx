@@ -60,7 +60,8 @@ const notfound = () => {
                 { 
                   getLinksData.map((item,any) => {
                    return (
-                    <div className='flex gap-x-8 items-center justify-center  font-[400] text-blue-500 text-center'>
+                    <div key={item.linktext}
+                    className='flex gap-x-8 items-center justify-center  font-[400] text-blue-500 text-center'>
                        <Link href={item.Link} className='text-[16px]'>{item.linktext}</Link>
                       </div>
                    )

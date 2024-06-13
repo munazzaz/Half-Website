@@ -2,8 +2,9 @@
 import Link from 'next/link'
 import React from 'react'
 import TypeWriterComponent from "typewriter-effect"
+import RippleButton from './RippleButton'
 
-const Texteffectsection = () => {
+const Texteffectsection:React.FC = () => {
   return (
     <div className=''>
          <div className="relative h-[50vh] bg-fixed bg-cover bg-center mt-[75px] " style={{ backgroundImage: 'url("https://optim.tildacdn.net/tild6636-3730-4333-b063-383833333431/-/format/webp/shutterstock_2181685.jpg")' }}>
@@ -38,7 +39,13 @@ const Texteffectsection = () => {
 
   <svg role="presentation" className="t581__arrow-icon_mobile a6:hidden block w-[24px] h-[60px]" style={{fill:"#00b3ff",}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 70"><path d="M32.1 46.5c-1.5-1.2-3.7-1-4.9.5l-6 7.4V6c0-1.9-1.6-3.5-3.5-3.5S14.2 4.1 14.2 6v48.4l-6-7.4c-1.2-1.5-3.4-1.7-4.9-.5s-1.7 3.4-.5 4.9L15 66.6c.7.8 1.7 1.3 2.7 1.3s2.1-.5 2.7-1.3l12.2-15.2c1.3-1.5 1-3.7-.5-4.9z"></path></svg> 
 
-    <button className=' a5:text-[15px] text-[12px] a5:w-[240px] w-[170px] a5:py-5 py-4 a6:mr-[152px] a7:mr-[12px] text-white bg-[#FC3C3C]  font-bold  rounded-full'>Get Your Cash Offer</button>
+    {/* <button className=' a5:text-[15px] text-[12px] a5:w-[240px] w-[170px] a5:py-5 py-4 a6:mr-[152px] a7:mr-[12px] text-white bg-[#FC3C3C]  font-bold  rounded-full'>Get Your Cash Offer</button> */}
+   
+    {/* <div className="flex items-center justify-center">
+    <RippleButton>Get Your Cash Offer</RippleButton>
+    </div> */}
+    <RippleButton />
+    
 </div>
 
 
