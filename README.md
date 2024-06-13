@@ -16,6 +16,25 @@ bun dev
 
 
 
+<!-- Packages -->
+
+
+<!-- Sitemap.tsx -->
+npm install --save-dev @types/date-fns
+npm install date-fns
+
+<!-- Custom Offline Page -->
+npm install next-pwa
+
+<!--  -->
+npm install @heroicons/react
+
+<!-- Ip address -->
+npm install axios
+
+
+
+
 
 
 
